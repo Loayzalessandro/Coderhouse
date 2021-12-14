@@ -1,0 +1,118 @@
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    "proyecto1"
+    "proyecto2"
+    "proyecto3"
+    "proyecto4"
+    "proyecto5"
+    "proyecto6";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap:10px;
+    min-height:90vh;
+    width:100%;
+    overflow: hidden;
+    justify-content: end;
+    
+    .gridItem {
+        background:grey;
+        min-height:200px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        /* padding:10px; */
+
+        a {
+            transform: translateY(400px);
+            transition: all 0.3s;
+            color: white;
+            h3, p, form {
+                transform: translateY(400px);
+                transition: all 0.3s;
+                color: white;
+            }
+            input {
+                margin-left: 0px;
+            }
+
+        }
+
+        a:hover {
+            transition: all ease-in 1s;
+            padding-bottom:20px;
+            .capa-gradiente {
+            background-color: #00000077;
+            transition: all ease-in 0.3s;
+            }
+            h3, p, form {
+                transform: translateY(0px);
+                transition: all 0.3s;
+            }
+            h3 {
+                color:$caterpillar-bee!important;
+                font-weight: bold;
+                /* padding-bottom:20px; */
+            }
+            form {
+                margin: inherit;
+            }
+        }
+        .capa-gradiente {
+            height:100%;
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: end;
+            padding:30px;
+            transition: all ease-in 0.3s;
+
+            .gridItem__titulo {
+                margin:0px;
+                color:white;
+                font-size:30px;
+                }
+                
+            .gridItem__descripcion {
+                text-align: start;
+                line-height: 1;
+                } 
+        }
+    }
+
+    #proyecto-1 {
+        background-image: url(/img/amparonalvarte.png);
+        background-position: left center!important;
+        grid-area:proyecto1;
+        z-index: 6;
+        }            
+    #proyecto-2 {
+        background-image: url(/img/ohsweetart.png);
+        grid-area:proyecto2;
+        z-index: 5;
+        }            
+    #proyecto-3 {
+        background-image: url(/img/wigouperu.png);
+        grid-area:proyecto3;
+        z-index: 4;
+        }            
+    #proyecto-4 {
+        background-image: url(/img/dreamhouse.png);
+        grid-area:proyecto4;
+        z-index: 3;
+        }            
+    #proyecto-5 {
+        background-image: url(/img/barbermastery.png);
+        grid-area:proyecto5;
+        z-index: 2;
+        }            
+    #proyecto-6 {
+        background-image: url(/img/altaperu.png);
+        grid-area:proyecto6;
+        z-index: 1;
+        }    
+}
+    

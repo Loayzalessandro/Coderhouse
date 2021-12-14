@@ -1,0 +1,44 @@
+@import "variables";
+
+$alturaViewport: 100vh;
+
+.banner {
+    min-height: $alturaViewport / 3; /* USO DE OPERACION */
+    padding-top: 0px!important;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5%!important;
+    > .banner__texto {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+    h1 {
+        padding: 0px;
+    }
+    P {
+        text-align: center;
+        color: $crema-bee;
+    }
+}
+
+#paginaDesarrolloWeb .banner {
+    background-image: url(../img/fondo-desarrollo-web.png);
+    background-repeat: none!important;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#paginaEcommerce .banner {
+    background-image: url(../img/fondo-e-commerce.png);
+    background-repeat: none!important;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#paginaBranding .banner {
+    background-image: url(../img/fondo-branding.png);
+    background-repeat: none;
+    background-size: contain;
+    background-attachment: fixed;
+}
